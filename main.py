@@ -1,4 +1,8 @@
-# list of functions to be used
+import turtle
+import time
+
+WIDTH, HEIGHT = 500, 500
+
 
 def get_number_of_racers():
     racers = 0
@@ -17,4 +21,15 @@ def get_number_of_racers():
             print("Number not in range! Please try again!")
 
 
+def init_turtle():
+    screen = turtle.Screen()
+    screen.setup(WIDTH, HEIGHT)
+    screen.title("Muck Turtle Race")
+
+
 racers = get_number_of_racers()
+init_turtle()
+
+racer = turtle.Turtle()
+racer.forward(100)
+time.sleep(5)

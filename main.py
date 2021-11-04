@@ -1,7 +1,10 @@
 import turtle
 import time
+import random
 
 WIDTH, HEIGHT = 500, 500
+COLORS = ['red', 'green', 'blue', 'orange', 'yellow',
+          'black', 'purple', 'pink', 'cyan', 'brown']
 
 
 def get_number_of_racers():
@@ -29,7 +32,5 @@ def init_turtle():
 
 racers = get_number_of_racers()
 init_turtle()
-
-racer = turtle.Turtle()
-racer.forward(100)
-time.sleep(5)
+random.shuffle(COLORS)
+colors = COLORS[:racers]

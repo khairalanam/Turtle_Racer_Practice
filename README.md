@@ -15,5 +15,6 @@ It is a beginner python project which asks the number of turtles as input for th
 * random.shuffle()
 * time module and its methods
 * Capitalizing all the letters in an identifier will make it a constant (Eg: width to WIDTH will make this identifier constant, i.e, immutable)
+* Functional Programming
 
 *Only for learning purposes*
